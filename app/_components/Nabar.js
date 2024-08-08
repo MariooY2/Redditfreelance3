@@ -17,9 +17,12 @@ function Navbar() {
           </div>
           <span className="text-purple-700 text-xl ml-3 sm:block hidden">Uncooked</span>
         </div>
-        <div className="flex space-x-4 text-purple-700">
+        <div className="flex sm:space-x-4 space-x-2 text-purple-700">
           <Link href="/" className=" hover:text-purple-900">
             Home
+          </Link>
+          <Link href="/About" className=" hover:text-purple-900">
+            About
           </Link>
           <Link href="/Blog" className=" hover:text-purple-900">
             Blog
