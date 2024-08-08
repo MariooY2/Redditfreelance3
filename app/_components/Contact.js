@@ -37,14 +37,14 @@ function Contact() {
   return (
     <div className="container mx-auto py-2 px-6 mt-4 lg:mt-10 flex justify-center items-center">
       <div className="w-full lg:w-1/2 bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold text-purple-600 mb-6">Get in Touch</h2>
+        <h2 className="text-2xl font-bold text-fuchsia-700 mb-6">Get in Touch</h2>
         <form ref={form} className="space-y-6" onSubmit={sendEmail}>
           <div>
             <label className="block text-xl text-gray-700 mb-2">Name</label>
             <input
               type="text"
               name="from_name"
-              className="w-full px-4 py-2 border text-gray-700 border-purple-400 rounded-lg focus:outline-none focus:ring-2 focus:border-purple-600"
+              className="w-full px-4 py-2 border text-gray-700 border-fuchsia-500 rounded-lg focus:outline-none focus:ring-2 focus:border-fuchsia-900"
               placeholder="Your Name"
               value={fromName}
               onChange={(e) => setFromName(e.target.value)}
@@ -56,7 +56,7 @@ function Contact() {
             <input
               type="email"
               name="to_name"
-              className=" w-full px-4 py-2 border text-gray-700 border-purple-400 rounded-lg focus:outline-none focus:ring-2 focus:border-purple-600 "
+              className=" w-full px-4 py-2 border text-gray-700 border-fuchsia-500 rounded-lg focus:outline-none focus:ring-2 focus:border-fuchsia-900 "
               placeholder="Your Email"
               value={toName}
               onChange={(e) => setToName(e.target.value)}
@@ -68,7 +68,7 @@ function Contact() {
             <input
               type="tel"
               name="phone_number"
-              className=" w-full px-4 py-2 border text-gray-700 border-purple-400 rounded-lg focus:outline-none focus:ring-2 focus:border-purple-600"
+              className=" w-full px-4 py-2 border text-gray-700 border-fuchsia-500 rounded-lg focus:outline-none focus:ring-2 focus:border-fuchsia-900"
               placeholder="Your Phone"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
@@ -79,7 +79,7 @@ function Contact() {
             <label className="block text-xl text-gray-700 mb-2">Message</label>
             <textarea
               name="message"
-              className=" w-full px-4 py-2 border text-gray-700 border-purple-400 rounded-lg focus:outline-none focus:ring-2 focus:border-purple-600 resize-none"
+              className=" w-full px-4 py-2 border text-gray-700 border-fuchsia-500 rounded-lg focus:outline-none focus:ring-2 focus:border-fuchsia-900 resize-none"
               placeholder="Your Message"
               rows="4"
               value={message}
@@ -89,7 +89,7 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className={`w-full bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:border-purple-600 transition duration-300 ${
+            className={`w-full bg-fuchsia-700 text-white px-4 py-2 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:border-fuchsia-900 transition duration-300 ${
               submitted ? "opacity-50 cursor-not-allowed" : ""
             }`}
             disabled={submitted}
