@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.image-invert-purple {
+  filter: invert(1) sepia(1) saturate(100%) hue-rotate(270deg) brightness(1) contrast(1.2);
+}
