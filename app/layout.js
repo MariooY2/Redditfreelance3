@@ -4,7 +4,7 @@ import Navbar from "./_components/Nabar";
 export const metadata = {
   title: "UnCooked",
   description:
-    "Transform your digital habits with our innovative app. UnCooked helps you combat phone addiction, track offline time, and promote a healthier, balanced lifestyle through engaging social interactions and rewarding experiences. Join our community and start your journey towards digital wellness today.",
+    "Beat screen addiction with friendly competition. Uncook your brain.",
 };
 
 export default function RootLayout({ children }) {
